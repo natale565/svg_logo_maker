@@ -1,0 +1,23 @@
+{
+  "name": "svg_logo_maker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "i": "^0.3.7",
+    "inquirer": "^8.2.4",
+    "npm": "^10.8.2"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
