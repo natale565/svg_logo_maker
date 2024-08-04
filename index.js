@@ -37,23 +37,25 @@ inquirer.prompt([
     });
 });
 
+
+
 function generateSVG(text, textColor, shape, shapeColor) {
     let shapeSVG = "";
     switch (shape) {
         case "circle":
-            shapeSVG = `<circle cx="150" cy="100" r="50" fill="${shapeColor}" />`;
+            shapeSVG = `<circle cx="50%" cy="50%" r="100" height="100%" width="100%" fill="${shapeColor}" />`;
             break;
         case "triangle":
-            shapeSVG = `<polygon points="150,30 180,150 120,150" fill="${shapeColor}" />`;
+            shapeSVG = `<polygon height="100%" width="100%" points="0,200 300,200 150,0" fill="${shapeColor}" />`;
             break;
         case "square":
-            shapeSVG = `<rect x="100" y="50" width="100" height="100" fill="${shapeColor}" />`;
+            shapeSVG = `<rect x="50" height="200" width="200" fill="${shapeColor}" />`;
             break;
     }
 
     return `
 <svg width="300" height="200" xmlns="http://www.w3.org/2000/svg">
     ${shapeSVG}
-    <text x="150" y="125" font-size="40" text-anchor="middle" fill="${textColor}">${text}</text>
+    <text x="150" y="125" font-size="60" text-anchor="middle" fill="${textColor}">${text}</text>
 </svg>`;
 }
